@@ -1,54 +1,55 @@
-y
-import java.util.Scanner; 
+import java.util.Scanner;
 
- 
 
-class Dec2Hex 
 
-{ 
+class Dec2Hex
 
- 
+{
 
-    public static int Arg1; 
 
- 
 
-    public static void main(String args[]) 
+    public static int Arg1;
 
-    { 
 
-        Arg1 = Integer.parseInt(args[0]); 
 
-        char ch[]={'0','1','2','3','4','5','6','7','8','9','A','B','C','D','E','F'}; 
+    public static void main(String args[])
 
-        int rem, num; 
+    {
 
-        num = Arg1; 
+        Arg1 = Integer.parseInt(args[0]);
 
-        String hexadecimal=""; 
+        char ch[]={'0','1','2','3','4','5','6','7','8','9','A','B','C','D','E','F'};
 
-        System.out.println("Converting the Decimal Value " + num + " to Hex..."); 
+        int rem, num;
 
- 
+        num = Arg1;
 
-        while(num != 0) 
+        String hexadecimal="";
 
-        { 
+        System.out.println("Converting the Decimal Value " + num + " to Hex...");
 
-            rem=num%16; 
 
-            hexadecimal= ch[rem] + hexadecimal; 
 
-            num= num/16; 
+        while(num != 0)
 
-        } 
+        {
 
- 
+            rem=num%16;
 
-        System.out.println("Hexadecimal representation is: " + hexadecimal); 
+            hexadecimal= ch[rem] + hexadecimal;
 
- 
+            num= num/16;
 
-    } 
+        }
 
-} 
+
+
+        System.out.println("Hexadecimal representation is: " + hexadecimal);
+
+
+
+    }
+
+}
+
+
